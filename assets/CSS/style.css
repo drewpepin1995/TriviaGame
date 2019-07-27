@@ -1,0 +1,15 @@
+h1 {    
+    font-family: comic sans MS;
+    font-size: large;
+    color:darkcyan;
+ 
+}
+body {
+    background-image: url("../Images/Background.jpg")
+}
+
+div.jumbotron {
+    opacity: 0.95;
+    background-color:lightgoldenrodyellow;
+}
+
