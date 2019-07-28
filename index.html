@@ -17,7 +17,185 @@
             <div class="row">
                 <div class="col text-center text-top">
                     <h1 class="display-1 p-3 border-bottom border-info">Sports Trivia</h1>
-                    <button type="button" class="btn btn-info btn-lg mt-5 pl-5 pr-5 border border-dark" id="rulesBtn">Start Game</button>
+                    <button type="button" id="startButton" class="btn btn-info btn-lg mt-5 pl-5 pr-5 border border-dark" id="rulesBtn">Start Game</button>
+                    <div class="container mt-4" style="display: none" id="quizForm">
+                        <h1 id="questionOne"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Five
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Four
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) Six
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) Three
+                                </label>
+                        <h1 id="questionTwo"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Sidney Crosby
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Wayne Gretzky
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) Bobby Orr
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) Alexander Ovechkin
+                                </label>
+                        <h1 id="questionThree"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Green Bay Packers
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Dallas Cowboys
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) Pittsburgh Steelers
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) New York Giants
+                                </label>
+                        <h1 id="questionFour"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Pedro Martinez
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Roger Clemens
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) Nolan Ryan
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) Randy Johnson
+                                </label>
+                        <h1 id="questionFive"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Peyton Manning
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Tom Brady
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) Patrick Mahomes
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) Dan Marino
+                                </label>
+                        <h1 id="questionSix"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) the Stars
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) the Golden Knights
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) the Blues
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) the Blackhawks
+                                </label>
+                        <h1 id="questionSeven"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) 1979
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) 1963
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) 1958
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) 1991
+                                </label>
+                        <h1 id="questionEight"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Vlad Guerrero
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Manny Ramirez
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) David Ortiz
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) Albert Pujols
+                                </label>
+                        <h1 id="questionNine"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Muggsy Bogues
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Isaiah Thomas
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) Steve Nash
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) Spud Webb
+                                </label>
+                        <h1 id="questionTen"></h1>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="A">
+                                    A) Two
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios2" value="B">
+                                    B) Three
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios3" value="C">
+                                    C) One
+                                </label>
+                                <label class="radio-inline m-2">
+                                    <input type="radio" name="quiz" id="Radios1" value="D">
+                                    D) Zero
+                                </label>
+                                <br>
+
+                        <button type="button" id="startButton" class="btn btn-info btn-lg mt-5 pl-5 pr-5 border border-dark" id="submitBtn">Submit</button>
+                    </div>
+                        
+                      
+
                 </div>
             </div>        
         </div>
