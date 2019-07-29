@@ -84,6 +84,7 @@ $(document).ready(function(){
                             $("#resultSheet").toggle();
                             $("#correctScore").text("Correct Answers : " + correctAnswers)
                             $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
+                            $("#totalScore").text("Score : " + ((correctAnswers / 10) * 100 ) + "%");
 
 
                         
@@ -162,6 +163,7 @@ $(document).ready(function(){
                 $("#resultSheet").toggle();
                 $("#correctScore").text("Correct Answers : " + correctAnswers)
                 $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
+                $("#totalScore").text("Score : " + ((correctAnswers / 10) * 100 ) + "%");
 
             
         });
