@@ -16,176 +16,158 @@ const questionTen = "10. How many NHL teams are located in the state of New York
 
 $(document).ready(function(){
 
-    let quizTimer = 45;
-
-    let counter=setInterval(timer, 1000);
-
-    function timer() {
-        
-        quizTimer=quizTimer-1;
-        
-        if (quizTimer <= 0)
-        {
-            clearInterval(counter);
-            
-            return;
-        }
-    }
-
-    
-
     $("#startButton").on("click", function(){
 
         let quizTimer = 45;
-
         let counter=setInterval(timer, 1000);
-
         function timer() {
-        
-                quizTimer=quizTimer-1;
-            
+
+            quizTimer=quizTimer-1;
+
                 if (quizTimer == 0) {
+
                     alert("Times up!")
-                
+                        
                     if ($("input[name=question1]:checked").val() === "C") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question2]:checked").val() === "B") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question3]:checked").val() === "A") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question4]:checked").val() === "C") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question5]:checked").val() === "A") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question6]:checked").val() === "D") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question7]:checked").val() === "A") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question8]:checked").val() === "D") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question9]:checked").val() === "A") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-                    if ($("input[name=question10]:checked").val() === "B") {
-                        correctAnswers++;
-                    } else {
-                        incorrectAnswers++;
-                    }
-        
-                    clearInterval(counter);
-                    $("#quizForm").toggle();
-                    $("#resultSheet").toggle();
-                    $("#correctScore").text("Correct Answers : " + correctAnswers)
-                    $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question2]:checked").val() === "B") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question3]:checked").val() === "A") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question4]:checked").val() === "C") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question5]:checked").val() === "A") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question6]:checked").val() === "D") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question7]:checked").val() === "A") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question8]:checked").val() === "D") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question9]:checked").val() === "A") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+                            if ($("input[name=question10]:checked").val() === "B") {
+                                correctAnswers++;
+                            } else {
+                                incorrectAnswers++;
+                            }
+            
+                            clearInterval(counter);
+                            $("#quizForm").toggle();
+                            $("#resultSheet").toggle();
+                            $("#correctScore").text("Correct Answers : " + correctAnswers)
+                            $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
 
 
-                
-                    return;
-                }
-            $("#timer").text("Time : " + quizTimer);
-        }
+                        
+                            return;
+                    }
+                $("#timer").text("Time : " + quizTimer);
+            }
         
-        $("#startButton").toggle();
-        $("#quizForm").toggle();
-        $("#questionOne").text(questionOne);
-        $("#questionTwo").text(questionTwo);
-        $("#questionThree").text(questionThree);
-        $("#questionFour").text(questionFour);
-        $("#questionFive").text(questionFive);
-        $("#questionSix").text(questionSix);
-        $("#questionSeven").text(questionSeven);
-        $("#questionEight").text(questionEight);
-        $("#questionNine").text(questionNine);
-        $("#questionTen").text(questionTen);
+            $("#startButton").toggle();
+            $("#quizForm").toggle();
+            $("#questionOne").text(questionOne);
+            $("#questionTwo").text(questionTwo);
+            $("#questionThree").text(questionThree);
+            $("#questionFour").text(questionFour);
+            $("#questionFive").text(questionFive);
+            $("#questionSix").text(questionSix);
+            $("#questionSeven").text(questionSeven);
+            $("#questionEight").text(questionEight);
+            $("#questionNine").text(questionNine);
+            $("#questionTen").text(questionTen);
 
         $("#submitBtn").on("click", function(){
-            if ($("input[name=question1]:checked").val() === "C") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question2]:checked").val() === "B") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question3]:checked").val() === "A") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question4]:checked").val() === "C") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question5]:checked").val() === "A") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question6]:checked").val() === "D") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question7]:checked").val() === "A") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question8]:checked").val() === "D") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question9]:checked").val() === "A") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
-            if ($("input[name=question10]:checked").val() === "B") {
-                correctAnswers++;
-            } else {
-                incorrectAnswers++;
-            }
+                if ($("input[name=question1]:checked").val() === "C") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question2]:checked").val() === "B") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question3]:checked").val() === "A") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question4]:checked").val() === "C") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question5]:checked").val() === "A") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question6]:checked").val() === "D") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question7]:checked").val() === "A") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question8]:checked").val() === "D") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question9]:checked").val() === "A") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
+                if ($("input[name=question10]:checked").val() === "B") {
+                    correctAnswers++;
+                } else {
+                    incorrectAnswers++;
+                }
 
-            clearInterval(counter);
-            $("#quizForm").toggle();
-            $("#resultSheet").toggle();
-            $("#correctScore").text("Correct Answers : " + correctAnswers)
-            $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
+                clearInterval(counter);
+                $("#quizForm").toggle();
+                $("#resultSheet").toggle();
+                $("#correctScore").text("Correct Answers : " + correctAnswers)
+                $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
 
-            $("#resetBtn").on("click", function(){
-                location.reload();
-            });
             
+        });
+
+        $("#resetBtn").on("click", function(){
+            location.reload();
         });
 
         
