@@ -1,6 +1,6 @@
 let correctAnswers = 0;
 let incorrectAnswers = 0;
-let quizTimer = 45;
+let quizTimer = 60;
 const questionOne = "1. How many NBA championships did Michael Jordan win with the Chicago Bulls after his return from playing baseball?"
 const questionTwo = "2. Who is the 2nd all-time leading scorer (total points) in NHL history, behind Wayne Greyzky?"
 const questionThree = "3. Which American Football team won the first two Super Bowls?"
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     $("#startButton").on("click", function(){
 
-        let quizTimer = 45;
+        let quizTimer = 60;
         let counter=setInterval(timer, 1000);
         function timer() {
 
