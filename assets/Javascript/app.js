@@ -10,9 +10,11 @@ const questionSeven = "7. When was the 3 point line first introduced in an NBA g
 const questionEight = "8. Who has the most homeruns in MLB history for a non-American born player?"
 const questionNine = "9. Who is the shortest player in NBA history?"
 const questionTen = "10. How many NHL teams are located in the state of New York?"
+let quizTimer = 45;
 
 $(document).ready(function(){
     $("#startButton").on("click", function(){
+        $("#quizTime").text("Time : " + quizTimer);
         $("#startButton").toggle();
         $("#quizForm").toggle();
         $("#questionOne").text(questionOne);
