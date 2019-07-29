@@ -181,6 +181,10 @@ $(document).ready(function(){
             $("#resultSheet").toggle();
             $("#correctScore").text("Correct Answers : " + correctAnswers)
             $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
+
+            $("#resetBtn").on("click", function(){
+                location.reload();
+            });
             
         });
 
