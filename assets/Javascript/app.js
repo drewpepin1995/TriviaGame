@@ -1,6 +1,5 @@
 let correctAnswers = 0;
 let incorrectAnswers = 0;
-let totalScore = 0;
 let quizTimer = 45;
 const questionOne = "1. How many NBA championships did Michael Jordan win with the Chicago Bulls?"
 const questionTwo = "2. Who is the all-time leading scorer (total points) in NHL history?"
@@ -33,6 +32,8 @@ $(document).ready(function(){
         }
     }
 
+    
+
     $("#startButton").on("click", function(){
 
         let quizTimer = 45;
@@ -43,9 +44,67 @@ $(document).ready(function(){
         
                 quizTimer=quizTimer-1;
             
-                if (quizTimer <= 0) {
+                if (quizTimer == 0) {
+                    alert("Times up!")
                 
+                    if ($("input[name=question1]:checked").val() === "C") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question2]:checked").val() === "B") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question3]:checked").val() === "A") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question4]:checked").val() === "C") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question5]:checked").val() === "A") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question6]:checked").val() === "D") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question7]:checked").val() === "A") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question8]:checked").val() === "D") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question9]:checked").val() === "A") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+                    if ($("input[name=question10]:checked").val() === "B") {
+                        correctAnswers++;
+                    } else {
+                        incorrectAnswers++;
+                    }
+        
                     clearInterval(counter);
+                    $("#quizForm").toggle();
+                    $("#resultSheet").toggle();
+                    $("#correctScore").text("Correct Answers : " + correctAnswers)
+                    $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
+
+
                 
                     return;
                 }
@@ -66,13 +125,66 @@ $(document).ready(function(){
         $("#questionTen").text(questionTen);
 
         $("#submitBtn").on("click", function(){
+            if ($("input[name=question1]:checked").val() === "C") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question2]:checked").val() === "B") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question3]:checked").val() === "A") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question4]:checked").val() === "C") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question5]:checked").val() === "A") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question6]:checked").val() === "D") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question7]:checked").val() === "A") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question8]:checked").val() === "D") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question9]:checked").val() === "A") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+            if ($("input[name=question10]:checked").val() === "B") {
+                correctAnswers++;
+            } else {
+                incorrectAnswers++;
+            }
+
+            clearInterval(counter);
             $("#quizForm").toggle();
             $("#resultSheet").toggle();
             $("#correctScore").text("Correct Answers : " + correctAnswers)
             $("#incorrectScore").text("Incorrect Answers : " + incorrectAnswers)
-            $("#totalScore").text("Score : " + totalScore);
-
+            
         });
+
+        
   
     });
 
